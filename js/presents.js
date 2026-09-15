@@ -119,6 +119,8 @@ const PRESENTS = [
   },
   {
     id: "claude-chat-cowork-code-guide",
+    // 元ページのOGPがClaudeブランドのブルーで、一覧の配色から浮くため自動生成にする
+    thumbAuto: true,
     number: "19",
     type: "page",
     category: "ChatGPT・AI活用",
