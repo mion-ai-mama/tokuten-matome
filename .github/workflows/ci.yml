@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    name: 壊れたページを公開しないための検査
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: JavaScriptの構文チェック
+        run: |
+          for f in js/*.js tools/*.js; do
+            node --check "$f"
+            echo "OK: $f"
+          done
+
+      - name: 必須ファイルの存在確認
+        run: |
+          for f in index.html css/style.css js/presents.js js/script.js README.md; do
+            test -f "$f" || { echo "見つかりません: $f"; exit 1; }
+            echo "OK: $f"
+          done
+
+      - name: 特典データの検査（重複・カテゴリー・URL・画像）
+        run: node tools/validate.js
