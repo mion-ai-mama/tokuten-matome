@@ -33,6 +33,11 @@ function loadPresents() {
   return new Function(`${src}; return PRESENTS;`)();
 }
 
+// image は "...jpg?v=abc123" の形を取りうるので、実ファイルを探すときは ?v= を外す
+function bareImage(imagePath) {
+  return String(imagePath).split("?")[0];
+}
+
 function escapeHtml(str) {
   return String(str).replace(
     /[&<>"']/g,
@@ -167,7 +172,7 @@ function main() {
   if (arg === "--regen") {
     targets = all;
   } else if (arg === "--missing") {
-    targets = all.filter((p) => !fs.existsSync(path.join(ROOT, p.image)));
+    targets = all.filter((p) => !fs.existsSync(path.join(ROOT, bareImage(p.image))));
   } else {
     targets = all.filter((p) => p.id === arg);
     if (targets.length === 0) {

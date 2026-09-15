@@ -54,7 +54,7 @@ function checkItem(item, index, seenIds) {
   check(item.image, `${where}: image がありません`);
   if (item.image) {
     check(
-      fs.existsSync(path.join(ROOT, item.image)),
+      fs.existsSync(path.join(ROOT, item.image.split("?")[0])),
       `${where}: 画像が見つかりません（${item.image}）`,
     );
   }

@@ -34,7 +34,7 @@ const PRESENTS = [
       "写真を4つのテイストのイラストに変換し、ポスターやフライヤー、ブログ素材まで展開できるプロンプト集です。",
     tags: ["画像生成", "プロンプト集", "ChatGPT"],
     url: "https://mion-ai-mama.github.io/chatgpt-illustration-tokuten/",
-    image: "assets/thumbs/chatgpt-illustration-tokuten.jpg",
+    image: "assets/thumbs/chatgpt-illustration-tokuten.jpg?v=2bcd0aa5",
   },
   {
     id: "chatgpt-sites-tokuten",
@@ -47,7 +47,7 @@ const PRESENTS = [
       "コードを書かなくても自分だけのホームページが作れます。コピペで使えるプロンプト付きの実践ガイドです。",
     tags: ["ホームページ", "ノーコード", "初心者向け"],
     url: "https://mion-ai-mama.github.io/chatgpt-sites-tokuten/",
-    image: "assets/thumbs/chatgpt-sites-tokuten.jpg",
+    image: "assets/thumbs/chatgpt-sites-tokuten.jpg?v=331b98b1",
   },
   {
     id: "chatgpt-true-self-tokuten",
@@ -60,7 +60,7 @@ const PRESENTS = [
       "自分でも気づいていない本音や思考のクセを、ChatGPTと一緒に整理していく自己分析ガイドです。",
     tags: ["自己分析", "質問集", "ChatGPT"],
     url: "https://mion-ai-mama.github.io/chatgpt-true-self-tokuten/",
-    image: "assets/thumbs/chatgpt-true-self-tokuten.jpg",
+    image: "assets/thumbs/chatgpt-true-self-tokuten.jpg?v=6f802dbd",
   },
   {
     id: "chatgpt-5-keywords-tokuten",
@@ -73,7 +73,7 @@ const PRESENTS = [
       "長い回答を漫画・図解・手書きノート・付箋・比較表に変える5つの合い言葉と、その設定方法を紹介します。",
     tags: ["時短", "図解", "ChatGPT"],
     url: "https://mion-ai-mama.github.io/chatgpt-5-keywords-tokuten/",
-    image: "assets/thumbs/chatgpt-5-keywords-tokuten.jpg",
+    image: "assets/thumbs/chatgpt-5-keywords-tokuten.jpg?v=48e35405",
   },
   {
     id: "gemini-prompt-5-tokuten",
@@ -87,7 +87,7 @@ const PRESENTS = [
       "Gemini・ChatGPT・Claudeでそのまま使えるプロンプト5選。ボタンひとつで簡単にコピーできます。",
     tags: ["Gemini", "プロンプト集", "コピペOK"],
     url: "https://mion-ai-mama.github.io/gemini-prompt-5-tokuten/",
-    image: "assets/thumbs/gemini-prompt-5-tokuten.jpg",
+    image: "assets/thumbs/gemini-prompt-5-tokuten.jpg?v=813500cd",
   },
   {
     id: "instagram-tokuten-template",
@@ -101,7 +101,7 @@ const PRESENTS = [
       "人気動画をChatGPTに見せるだけで「なぜ伸びたのか」「次の企画」が分かる3STEPガイドです。",
     tags: ["リール分析", "企画づくり", "ChatGPT"],
     url: "https://mion-ai-mama.github.io/instagram-tokuten-template/",
-    image: "assets/thumbs/instagram-tokuten-template.jpg",
+    image: "assets/thumbs/instagram-tokuten-template.jpg?v=4c9e9616",
   },
   {
     id: "linkedin-remote-work-guide",
@@ -115,7 +115,7 @@ const PRESENTS = [
       "LinkedInで海外の在宅ワークを探す方法から、求人の見極め・応募準備・Claude活用まで解説します。",
     tags: ["海外在宅", "LinkedIn", "Claude"],
     url: "https://mion-ai-mama.github.io/linkedin-remote-work-guide/",
-    image: "assets/thumbs/linkedin-remote-work-guide.jpg",
+    image: "assets/thumbs/linkedin-remote-work-guide.jpg?v=975fc02f",
   },
   {
     id: "claude-chat-cowork-code-guide",
@@ -130,7 +130,7 @@ const PRESENTS = [
       "Claudeの「考える・任せる・自動化する」を初心者向けに解説。今日から使えるプロンプト付きです。",
     tags: ["Claude", "使い分け", "初心者向け"],
     url: "https://mion-ai-mama.github.io/claude-chat-cowork-code-guide/",
-    image: "assets/thumbs/claude-chat-cowork-code-guide.jpg",
+    image: "assets/thumbs/claude-chat-cowork-code-guide.jpg?v=ad30b225",
   },
   {
     id: "line-emoji-ai-guide",
@@ -143,7 +143,7 @@ const PRESENTS = [
       "スマホで絵文字8種類を作り、Canvaで整えて、LINE Creators Marketへ販売申請するまで進めます。",
     tags: ["LINE絵文字", "販売", "Canva"],
     url: "https://mion-ai-mama.github.io/line-emoji-ai-guide/",
-    image: "assets/thumbs/line-emoji-ai-guide.jpg",
+    image: "assets/thumbs/line-emoji-ai-guide.jpg?v=176fe5be",
   },
   {
     id: "canva-ai-photo-to-video-guide",
@@ -157,7 +157,7 @@ const PRESENTS = [
       "写真1枚からCanva AIでリール用の動画素材を作る方法を解説。コピペで使えるカスタム指示集つき。",
     tags: ["Canva", "動画素材", "リール"],
     url: "https://mion-ai-mama.github.io/canva-ai-photo-to-video-guide/",
-    image: "assets/thumbs/canva-ai-photo-to-video-guide.jpg",
+    image: "assets/thumbs/canva-ai-photo-to-video-guide.jpg?v=791be026",
   },
   {
     id: "ai-note-writing-guide",
@@ -171,7 +171,7 @@ const PRESENTS = [
       "参考にしているSubstackと、海外記事をnoteに仕上げるまでの手順をまとめた実践ガイドです。",
     tags: ["note", "執筆", "Substack"],
     url: "https://mion-ai-mama.github.io/ai-note-writing-guide/",
-    image: "assets/thumbs/ai-note-writing-guide.jpg",
+    image: "assets/thumbs/ai-note-writing-guide.jpg?v=ca504963",
   },
   {
     id: "ai-ehon-debut-guide",
@@ -188,7 +188,7 @@ const PRESENTS = [
       "ChatGPTと画像生成AI、Canva、Amazon KDPを使って絵本づくりに挑戦できる完全ガイドです。",
     tags: ["AI絵本", "KDP", "3STEP"],
     url: "https://mion-ai-mama.github.io/ai-ehon-debut-guide/",
-    image: "assets/thumbs/ai-ehon-debut-guide.jpg",
+    image: "assets/thumbs/ai-ehon-debut-guide.jpg?v=f7bb8206",
   },
   {
     id: "line-sticker-ai-guide",
@@ -202,7 +202,7 @@ const PRESENTS = [
       "キャラクター作りから販売申請まで、スマホ中心で進められる初心者向けの6ステップガイドです。",
     tags: ["LINEスタンプ", "販売", "6STEP"],
     url: "https://mion-ai-mama.github.io/line-sticker-ai-guide/",
-    image: "assets/thumbs/line-sticker-ai-guide.jpg",
+    image: "assets/thumbs/line-sticker-ai-guide.jpg?v=5368be4f",
   },
   {
     id: "chatgpt-10-codes-tokuten",
@@ -216,7 +216,7 @@ const PRESENTS = [
       "応募文、クライアント対応、タスク整理まで。コピペするだけで使える実践プロンプト10選です。",
     tags: ["プロンプト集", "在宅ワーク", "コピペOK"],
     url: "https://mion-ai-mama.github.io/chatgpt-10-codes-tokuten/",
-    image: "assets/thumbs/chatgpt-10-codes-tokuten.jpg",
+    image: "assets/thumbs/chatgpt-10-codes-tokuten.jpg?v=b8076833",
   },
 
   // ============================================================
@@ -233,7 +233,7 @@ const PRESENTS = [
       "在宅ワークをこれから始める方へ。仕事の種類から探し方まで、最初の一歩をまとめた保存版ガイドです。",
     tags: ["在宅ワーク", "保存版", "初心者向け"],
     url: NOTE_BASE + "n18fbedb3896c",
-    image: "assets/thumbs/note-ouchiwork-guide.jpg",
+    image: "assets/thumbs/note-ouchiwork-guide.jpg?v=dd1c02c8",
   },
   {
     id: "note-ai-pet-brand",
@@ -246,7 +246,7 @@ const PRESENTS = [
       "在庫を持たずにオリジナルのペットグッズブランドを立ち上げる方法を、AI活用の手順とあわせて解説します。",
     tags: ["画像生成", "オリジナル商品", "在庫ゼロ"],
     url: NOTE_BASE + "n938991e580c7",
-    image: "assets/thumbs/note-ai-pet-brand.jpg",
+    image: "assets/thumbs/note-ai-pet-brand.jpg?v=7504eafd",
   },
   {
     id: "note-chatgpt-googlemap",
@@ -259,7 +259,7 @@ const PRESENTS = [
       "ChatGPTとGoogleマップの組み合わせだけで、リサーチや情報整理がどこまでできるのかを実例で紹介します。",
     tags: ["リサーチ", "Googleマップ", "ChatGPT"],
     url: NOTE_BASE + "n3700b67c2530",
-    image: "assets/thumbs/note-chatgpt-googlemap.jpg",
+    image: "assets/thumbs/note-chatgpt-googlemap.jpg?v=8f99ed71",
   },
   {
     id: "note-chatgpt-note-writing",
@@ -272,7 +272,7 @@ const PRESENTS = [
       "テーマ決めから構成、書き出しまで。ChatGPTを使って最後まで読まれるnote記事を作る手順をまとめました。",
     tags: ["note", "執筆", "ChatGPT"],
     url: NOTE_BASE + "n5fadbf84fbe7",
-    image: "assets/thumbs/note-chatgpt-note-writing.jpg",
+    image: "assets/thumbs/note-chatgpt-note-writing.jpg?v=8e797433",
   },
   {
     id: "note-digital-sticker",
@@ -285,7 +285,7 @@ const PRESENTS = [
       "海外で人気のデジタルステッカーをChatGPTで作る方法を、デザインから出品準備まで解説します。",
     tags: ["画像生成", "海外販売", "ステッカー"],
     url: NOTE_BASE + "nb534fb39cbb9",
-    image: "assets/thumbs/note-digital-sticker.jpg",
+    image: "assets/thumbs/note-digital-sticker.jpg?v=49fb3c2b",
   },
   {
     id: "note-nihongo-zaitaku",
@@ -298,7 +298,7 @@ const PRESENTS = [
       "特別なスキルがなくても、日本語が話せることを強みにできる在宅ワークを3つ紹介します。",
     tags: ["在宅ワーク", "日本語", "3選"],
     url: NOTE_BASE + "nc1dec6493fd8",
-    image: "assets/thumbs/note-nihongo-zaitaku.jpg",
+    image: "assets/thumbs/note-nihongo-zaitaku.jpg?v=54620120",
   },
   {
     id: "note-ai-pinterest",
@@ -313,7 +313,7 @@ const PRESENTS = [
       "Pinterestを使って、AIが代わりに動いてくれる仕組みを作る方法を初心者ママ向けに解説します。",
     tags: ["Pinterest", "自動化", "初心者向け"],
     url: NOTE_BASE + "nf46c6e746b83",
-    image: "assets/thumbs/note-ai-pinterest.jpg",
+    image: "assets/thumbs/note-ai-pinterest.jpg?v=e81ca5ea",
   },
   {
     id: "note-wafu-design",
@@ -328,7 +328,7 @@ const PRESENTS = [
       "子どもが起きる前の30分で作れる、海外で人気の和風デザイン。ChatGPTでの作り方をまとめました。",
     tags: ["画像生成", "和風デザイン", "海外販売"],
     url: NOTE_BASE + "n34e8a1f26996",
-    image: "assets/thumbs/note-wafu-design.jpg",
+    image: "assets/thumbs/note-wafu-design.jpg?v=072dc269",
   },
   {
     id: "note-subsc-list",
@@ -343,7 +343,7 @@ const PRESENTS = [
       "把握しきれていない毎月のサブスクを、AIに頼んで10分で一覧表にした実際の手順を紹介します。",
     tags: ["家計管理", "時短", "ChatGPT"],
     url: NOTE_BASE + "n977cbd7f5a40",
-    image: "assets/thumbs/note-subsc-list.jpg",
+    image: "assets/thumbs/note-subsc-list.jpg?v=ef269427",
   },
   {
     id: "note-rakuten-room",
@@ -357,7 +357,7 @@ const PRESENTS = [
       "スマホの操作1回で、楽天ROOMの投稿をAIに丸投げする仕組みの作り方をまとめたマニュアルです。",
     tags: ["楽天ROOM", "自動化", "スマホ完結"],
     url: NOTE_BASE + "n015f0fe0a0f4",
-    image: "assets/thumbs/note-rakuten-room.jpg",
+    image: "assets/thumbs/note-rakuten-room.jpg?v=dc0b6329",
   },
   {
     id: "note-tesou-shindan",
@@ -371,7 +371,7 @@ const PRESENTS = [
       "今の自分の立ち位置をChatGPTで客観的に整理し、次の一歩を考えるための自己分析プロンプトです。",
     tags: ["自己分析", "プロンプト", "手相診断"],
     url: NOTE_BASE + "nab43b7c4b777",
-    image: "assets/thumbs/note-tesou-shindan.jpg",
+    image: "assets/thumbs/note-tesou-shindan.jpg?v=e7cf3742",
   },
 
   // ============================================================
@@ -405,6 +405,6 @@ const PRESENTS = [
 【注意点】（例外やリスク）
 【参照元】（URLやソース名）
 【情報の確実性】（S〜Cランク）`,
-    image: "assets/thumbs/prompt-factcheck.jpg",
+    image: "assets/thumbs/prompt-factcheck.jpg?v=5ae6cc9f",
   },
 ];
