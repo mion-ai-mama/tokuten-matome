@@ -59,6 +59,13 @@ function buildHtml(item) {
   const tags = item.tags
     .map((t) => `<span class="tag">#${escapeHtml(t)}</span>`)
     .join("");
+  // thumbArt がある特典は、右側にその画像を並べた横長サムネにする
+  // （正方形の表紙画像などを、切らずに16:9へ収めるため）
+  // 一時フォルダで描画するため、画像は絶対パスで指定する
+  const artPath = item.thumbArt ? path.join(ROOT, item.thumbArt) : null;
+  const art = artPath
+    ? `<div class="art"><img src="file://${escapeHtml(artPath)}" alt=""></div>`
+    : "";
   return `<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -69,7 +76,21 @@ function buildHtml(item) {
   }
   .accent { width: 18px; flex-shrink: 0;
     background: linear-gradient(180deg, #cf8a92 0%, #e2a9ad 60%, #f7dfe0 100%); }
-  .inner { flex: 1; padding: 38px 48px; display: flex; flex-direction: column; }
+  .inner { flex: 1; min-width: 0; padding: 38px 48px; display: flex; flex-direction: column; }
+  .inner.has-art { padding: 34px 28px 34px 44px; }
+  .art { width: 312px; flex-shrink: 0; align-self: stretch;
+    background: #fbeeec; border-left: 1px solid #f0dfdc; }
+  .art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .has-art h1 { font-size: 32px; margin-top: 16px; }
+  .has-art .desc { font-size: 16px; -webkit-line-clamp: 2; }
+  /* 幅が狭くなるぶん、上段が折り返さないように詰める */
+  .has-art .top { gap: 10px; }
+  .has-art .num { font-size: 27px; }
+  .has-art .pill { font-size: 14px; padding: 5px 12px; white-space: nowrap; }
+  .has-art .type { display: none; }
+  .has-art .tags { gap: 8px; flex-wrap: nowrap; }
+  .has-art .tag { font-size: 13px; padding: 4px 10px; white-space: nowrap; }
+  .has-art .who { font-size: 14px; padding-left: 10px; }
   .top { display: flex; align-items: center; gap: 16px; }
   .num { font-size: 34px; font-weight: 800; color: #e6c2c4; letter-spacing: 1px; line-height: 1; }
   .pill { font-size: 17px; font-weight: 700; color: #b16d76;
@@ -88,7 +109,7 @@ function buildHtml(item) {
     white-space: nowrap; padding-left: 16px; }
 </style></head><body>
   <div class="accent"></div>
-  <div class="inner">
+  <div class="inner${item.thumbArt ? " has-art" : ""}">
     <div class="top">
       <div class="num">${escapeHtml(item.number)}</div>
       <div class="pill">${escapeHtml(item.category)}</div>
@@ -101,6 +122,7 @@ function buildHtml(item) {
       <div class="who">@mion.ai.mama</div>
     </div>
   </div>
+  ${art}
 </body></html>`;
 }
 
@@ -160,6 +182,10 @@ function main() {
     return;
   }
   targets.forEach((item) => {
+    if (item.thumbArt && !fs.existsSync(path.join(ROOT, item.thumbArt))) {
+      console.error(`thumbArt の画像が見つかりません: ${item.thumbArt}（${item.id}）`);
+      process.exit(1);
+    }
     const out = renderOne(item);
     const kb = Math.round(fs.statSync(out).size / 1024);
     console.log(`  ${path.basename(out)}  ${kb}KB`);

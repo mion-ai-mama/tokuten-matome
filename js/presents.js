@@ -173,6 +173,10 @@ const PRESENTS = [
   },
   {
     id: "ai-ehon-debut-guide",
+    thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
+    // 元画像が正方形の絵本表紙のため、16:9に切ると文字が欠ける。
+    // タイトルの横に表紙を並べる形で生成する。
+    thumbArt: "assets/thumb-src/ai-ehon-cover.jpg",
     number: "15",
     type: "page",
     category: "AIで副業・在宅ワーク",
