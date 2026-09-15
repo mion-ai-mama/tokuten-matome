@@ -25,7 +25,7 @@ const PRESENTS = [
   // ============================================================
   {
     id: "chatgpt-illustration-tokuten",
-    number: "01",
+    number: "26",
     type: "page",
     category: "画像・動画づくり",
     title: "写真から仕事に使える<br>デザインへ",
@@ -38,7 +38,7 @@ const PRESENTS = [
   },
   {
     id: "chatgpt-sites-tokuten",
-    number: "02",
+    number: "25",
     type: "page",
     category: "AIで副業・在宅ワーク",
     title: "ChatGPTで<br>ホームページを作る方法",
@@ -51,7 +51,7 @@ const PRESENTS = [
   },
   {
     id: "chatgpt-true-self-tokuten",
-    number: "03",
+    number: "24",
     type: "page",
     category: "ChatGPT・AI活用",
     title: "「本当の自分」を深掘りする<br>5つの質問",
@@ -64,7 +64,7 @@ const PRESENTS = [
   },
   {
     id: "chatgpt-5-keywords-tokuten",
-    number: "04",
+    number: "23",
     type: "page",
     category: "ChatGPT・AI活用",
     title: "長文がパッとわかる<br>5つの魔法の合い言葉",
@@ -78,7 +78,7 @@ const PRESENTS = [
   {
     id: "gemini-prompt-5-tokuten",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "05",
+    number: "22",
     type: "page",
     category: "ChatGPT・AI活用",
     title: "Geminiの回答が変わる<br>コピペ用プロンプト5選",
@@ -92,7 +92,7 @@ const PRESENTS = [
   {
     id: "instagram-tokuten-template",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "06",
+    number: "21",
     type: "page",
     category: "ChatGPT・AI活用",
     title: "AIで人気動画を分析する<br>3STEPガイド",
@@ -106,7 +106,7 @@ const PRESENTS = [
   {
     id: "linkedin-remote-work-guide",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "07",
+    number: "20",
     type: "page",
     category: "AIで副業・在宅ワーク",
     title: "AIを味方に探す<br>海外在宅ワーク入門",
@@ -119,7 +119,7 @@ const PRESENTS = [
   },
   {
     id: "claude-chat-cowork-code-guide",
-    number: "08",
+    number: "19",
     type: "page",
     category: "ChatGPT・AI活用",
     title: "Claude Chat・Cowork・Code<br>使い分けガイド",
@@ -132,7 +132,7 @@ const PRESENTS = [
   },
   {
     id: "line-emoji-ai-guide",
-    number: "09",
+    number: "18",
     type: "page",
     category: "画像・動画づくり",
     title: "AIでLINE絵文字を作って<br>販売するガイド",
@@ -146,7 +146,7 @@ const PRESENTS = [
   {
     id: "canva-ai-photo-to-video-guide",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "10",
+    number: "17",
     type: "page",
     category: "画像・動画づくり",
     title: "写真1枚でリール動画素材<br>Canva AI活用ガイド",
@@ -160,7 +160,7 @@ const PRESENTS = [
   {
     id: "ai-note-writing-guide",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "11",
+    number: "16",
     type: "page",
     category: "AIで副業・在宅ワーク",
     title: "AIで海外記事をヒントに<br>noteを書く方法",
@@ -173,7 +173,7 @@ const PRESENTS = [
   },
   {
     id: "ai-ehon-debut-guide",
-    number: "12",
+    number: "15",
     type: "page",
     category: "AIで副業・在宅ワーク",
     title: "AI絵本デビュー<br>完全ガイド",
@@ -187,7 +187,7 @@ const PRESENTS = [
   {
     id: "line-sticker-ai-guide",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "13",
+    number: "14",
     type: "page",
     category: "画像・動画づくり",
     title: "AIでLINEスタンプを作って<br>販売するガイド",
@@ -201,7 +201,7 @@ const PRESENTS = [
   {
     id: "chatgpt-10-codes-tokuten",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "14",
+    number: "13",
     type: "page",
     category: "ChatGPT・AI活用",
     title: "在宅ワークで差がつく<br>ChatGPT最強コード10選",
@@ -218,7 +218,7 @@ const PRESENTS = [
   // ============================================================
   {
     id: "note-ouchiwork-guide",
-    number: "15",
+    number: "12",
     type: "note",
     category: "AIで副業・在宅ワーク",
     title: "【保存版】初心者向け<br>おうちワーク完全ガイド",
@@ -231,7 +231,7 @@ const PRESENTS = [
   },
   {
     id: "note-ai-pet-brand",
-    number: "16",
+    number: "11",
     type: "note",
     category: "画像・動画づくり",
     title: "在庫ゼロで始める<br>AI×ペットブランド",
@@ -244,7 +244,7 @@ const PRESENTS = [
   },
   {
     id: "note-chatgpt-googlemap",
-    number: "17",
+    number: "10",
     type: "note",
     category: "AIで副業・在宅ワーク",
     title: "ChatGPT×Googleマップ<br>だけでここまでできる！",
@@ -257,7 +257,7 @@ const PRESENTS = [
   },
   {
     id: "note-chatgpt-note-writing",
-    number: "18",
+    number: "09",
     type: "note",
     category: "AIで副業・在宅ワーク",
     title: "ChatGPTで読まれる<br>note記事を作る方法",
@@ -270,7 +270,7 @@ const PRESENTS = [
   },
   {
     id: "note-digital-sticker",
-    number: "19",
+    number: "08",
     type: "note",
     category: "画像・動画づくり",
     title: "ChatGPTで作る<br>海外向けデジタルステッカー",
@@ -283,7 +283,7 @@ const PRESENTS = [
   },
   {
     id: "note-nihongo-zaitaku",
-    number: "20",
+    number: "07",
     type: "note",
     category: "AIで副業・在宅ワーク",
     title: "日本語を活かせる<br>在宅ワーク3選",
@@ -297,7 +297,7 @@ const PRESENTS = [
   {
     id: "note-ai-pinterest",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "21",
+    number: "06",
     type: "note",
     category: "AIで副業・在宅ワーク",
     title: "AIが代わりに働く仕組み<br>AI×Pinterest入門",
@@ -312,7 +312,7 @@ const PRESENTS = [
   {
     id: "note-wafu-design",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "22",
+    number: "05",
     type: "note",
     category: "画像・動画づくり",
     title: "ChatGPTで作る<br>海外ウケ和風デザイン",
@@ -327,7 +327,7 @@ const PRESENTS = [
   {
     id: "note-subsc-list",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "23",
+    number: "04",
     type: "note",
     category: "ChatGPT・AI活用",
     title: "毎月のサブスク<br>AIに頼んだら10分で一覧表",
@@ -341,7 +341,7 @@ const PRESENTS = [
   },
   {
     id: "note-rakuten-room",
-    number: "24",
+    number: "03",
     type: "note",
     category: "AIで副業・在宅ワーク",
     title: "スマホ1回ポチッで丸投げ<br>AI×楽天ROOM自動化",
@@ -355,7 +355,7 @@ const PRESENTS = [
   },
   {
     id: "note-tesou-shindan",
-    number: "25",
+    number: "02",
     type: "note",
     category: "ChatGPT・AI活用",
     title: "「自分の現在地」を客観視する<br>自己分析プロンプト",
@@ -374,7 +374,7 @@ const PRESENTS = [
   {
     id: "prompt-factcheck",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
-    number: "26",
+    number: "01",
     type: "prompt",
     category: "ChatGPT・AI活用",
     title: "ファクトチェック<br>プロトコル",

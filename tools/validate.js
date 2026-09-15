@@ -72,13 +72,35 @@ function checkOrder(list) {
     if (rank > previous) previous = rank;
   });
 
-  // number が 01 から通し番号になっているか
+  // number は「古いものほど小さい」通し番号。新しい特典ほど大きな番号になる。
+  // 各グループは新着順に並ぶので、上から下へ番号が減っていくのが正しい状態。
+  const seenNumbers = new Set();
   list.forEach(function (item, i) {
-    const expected = String(i + 1).padStart(2, "0");
     check(
-      item.number === expected,
-      `${i + 1}件目（${item.id}）: number が ${item.number} です。${expected} に振り直してください`,
+      /^\d{2,}$/.test(item.number || ""),
+      `${i + 1}件目（${item.id}）: number は2桁以上の数字にしてください（${item.number}）`,
     );
+    check(
+      !seenNumbers.has(item.number),
+      `${i + 1}件目（${item.id}）: number ${item.number} が重複しています`,
+    );
+    seenNumbers.add(item.number);
+  });
+
+  let lastType = null;
+  let lastNumber = Infinity;
+  list.forEach(function (item, i) {
+    if (item.type !== lastType) {
+      lastType = item.type;
+      lastNumber = Infinity;
+    }
+    const current = Number(item.number);
+    check(
+      current < lastNumber,
+      `${i + 1}件目（${item.id}）: number ${item.number} の位置がおかしいです。` +
+        "各グループは新しい順（番号が大きい順）に並べてください",
+    );
+    lastNumber = current;
   });
 }
 
