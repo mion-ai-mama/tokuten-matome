@@ -24,6 +24,23 @@ const PRESENTS = [
   // ① 特典ページ型（GitHub Pages）… 新着順
   // ============================================================
   {
+    id: "claude-canva-tokuten",
+    thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
+    // 完成例が縦4:5のInstagram表紙のため、16:9に切ると文字が欠ける。
+    // タイトルの横に完成例を並べる形で生成する。
+    thumbArt: "assets/thumb-src/claude-canva-cover.jpg",
+    number: "27",
+    type: "page",
+    category: "画像・動画づくり",
+    title: "Claude×Canva<br>連携 完全ガイド",
+    plainTitle: "Claude×Canva連携 完全ガイド｜画像の土台を作って、Canvaで仕上げる実践手順",
+    description:
+      "ClaudeとCanvaをつないで、Instagram投稿やバナーのデザイン案を作る方法です。連携手順から用途別のコピペ用プロンプト、修正のコツまでまとめました。",
+    tags: ["Canva", "Claude", "プロンプト集"],
+    url: "https://mion-ai-mama.github.io/claude-canva-tokuten/",
+    image: "assets/thumbs/claude-canva-tokuten.jpg?v=6452b95e",
+  },
+  {
     id: "chatgpt-illustration-tokuten",
     number: "26",
     type: "page",
