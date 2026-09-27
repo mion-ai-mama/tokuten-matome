@@ -24,6 +24,20 @@ const PRESENTS = [
   // ① 特典ページ型（GitHub Pages）… 新着順
   // ============================================================
   {
+    id: "line-emoji-tokuten",
+    thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
+    number: "28",
+    type: "page",
+    category: "AIで副業・在宅ワーク",
+    title: "動くLINE絵文字の<br>作り方 完全ガイド",
+    plainTitle: "動くLINE絵文字の作り方 完全ガイド｜Codex用プロンプト付き",
+    description:
+      "絵心もコードの知識も不要。Codexにプロンプトとキットを渡すだけで、動くLINE絵文字（APNG）40個セットが作れる完全ガイドです。LINEへの申請手順まで解説しています。",
+    tags: ["LINEスタンプ", "Codex", "副業"],
+    url: "https://mion-ai-mama.github.io/line-emoji-tokuten/",
+    image: "assets/thumbs/line-emoji-tokuten.jpg?v=b86e6219",
+  },
+  {
     id: "claude-canva-tokuten",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
     // 完成例が縦4:5のInstagram表紙のため、16:9に切ると文字が欠ける。
