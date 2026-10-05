@@ -260,6 +260,33 @@
     });
   }
 
+  /* ---------- 画面下の固定ボタン ----------
+     少しスクロールしたら表示。CTAとフッターが見えている間は隠す */
+
+  const STICKY_SHOW_SCREENS = 1;
+  const stickyBar = document.querySelector(".sticky-cta");
+  const stickyHideTargets = [".cta", ".footer"]
+    .map(function (selector) {
+      return document.querySelector(selector);
+    })
+    .filter(Boolean);
+
+  function isInView(node) {
+    const rect = node.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+
+  function updateSticky() {
+    const scrolledEnough = window.scrollY >= window.innerHeight * STICKY_SHOW_SCREENS;
+    stickyBar.classList.toggle("is-visible", scrolledEnough && !stickyHideTargets.some(isInView));
+  }
+
+  if (stickyBar) {
+    window.addEventListener("scroll", updateSticky, { passive: true });
+    window.addEventListener("resize", updateSticky);
+    updateSticky();
+  }
+
   /* ---------- 起動 ---------- */
 
   el.total.textContent = String(PRESENTS.length);

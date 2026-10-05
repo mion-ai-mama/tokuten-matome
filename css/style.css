@@ -463,39 +463,180 @@ a {
   color: var(--color-text-muted);
 }
 
-/* ---------- 6. CTA ---------- */
+/* ---------- 6. CTA（特典単体ページのCTAと同じ見た目） ---------- */
+
+/* CTAのボタン色。単体ページと同じ濃いピンクで目立たせる */
+:root {
+  --color-cta: #d03f64;
+  --color-cta-dark: #b02c52;
+  --color-cta-shadow: rgba(208, 63, 100, 0.22);
+}
 
 .cta {
   background: linear-gradient(150deg, var(--color-bg-soft) 0%, #fdf5f2 100%);
   border-top: 1px solid var(--color-border);
   padding: clamp(2.5rem, 8vw, 4rem) 0;
+}
+
+.cta-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--color-accent-light);
+  border-radius: var(--radius-lg);
+  padding: clamp(2rem, 6vw, 3rem) clamp(1.5rem, 6vw, 2.5rem);
   text-align: center;
 }
 
-.cta__heading {
-  font-size: clamp(1.15rem, 4vw, 1.5rem);
+.cta-card__heading {
+  font-size: clamp(1.3rem, 4.5vw, 1.8rem);
+  line-height: 1.5;
+  margin: 0 0 1.25rem;
   font-weight: 800;
-  line-height: 1.6;
 }
 
-.cta__text {
-  margin-top: 1rem;
-  font-size: 0.92rem;
+.cta-card__highlight {
+  color: var(--color-cta-dark);
+}
+
+.prose p {
+  margin: 0 0 1.4em;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.cta-card__contents {
+  width: 100%;
+  aspect-ratio: 1855 / 848;
+  object-fit: contain;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 28px -18px var(--color-cta-shadow);
+}
+
+.cta-card__banner-link {
+  display: block;
+  margin-top: 1.25rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 12px 28px -14px var(--color-cta-shadow);
+  transition: transform 0.15s ease;
+}
+
+.cta-card__banner-link:hover {
+  transform: scale(1.015);
+}
+
+.cta-card__banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.cta-card .btn {
+  margin-top: 1.25rem;
+}
+
+.cta-card__note {
+  margin: 0.9rem 0 0;
+  font-size: 0.85rem;
   color: var(--color-text-muted);
 }
 
-.cta__banner {
-  display: inline-block;
-  margin-top: 1.8rem;
-  max-width: 520px;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: 0 8px 24px var(--color-card-shadow);
-  transition: transform 0.2s;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.9em 1.6em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
-.cta__banner:hover {
-  transform: translateY(-3px);
+.btn--primary {
+  background: linear-gradient(160deg, var(--color-cta), var(--color-cta-dark));
+  color: #fff;
+  box-shadow: 0 14px 26px -8px var(--color-cta-shadow);
+}
+
+.btn--primary:hover {
+  background: var(--color-cta-dark);
+}
+
+.btn--large {
+  width: 100%;
+  max-width: 360px;
+  padding: 1.1em 1.6em;
+  font-size: 1.05rem;
+}
+
+/* 画面下に追従するLINEボタン */
+.sticky-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom));
+  background: rgba(253, 250, 247, 0.94);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(100%);
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.sticky-cta.is-visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.sticky-cta__btn {
+  width: 100%;
+  max-width: 460px;
+  padding: 0.85em 1.2em;
+  font-size: 0.95rem;
+  background: #039c45; /* LINEとひと目で分かる緑（このボタンだけ） */
+  box-shadow: 0 10px 22px -8px rgba(3, 156, 69, 0.5);
+  animation: sticky-cta-pulse 2.4s ease-in-out infinite;
+}
+
+.sticky-cta__btn:hover {
+  background: #028a3d;
+}
+
+.sticky-cta__icon {
+  flex: none;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+@keyframes sticky-cta-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticky-cta__btn {
+    animation: none;
+  }
 }
 
 /* ---------- 7. フッター ---------- */
