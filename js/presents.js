@@ -24,6 +24,20 @@ const PRESENTS = [
   // ① 特典ページ型（GitHub Pages）… 新着順
   // ============================================================
   {
+    id: "digital-planner-tokuten",
+    thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
+    number: "29",
+    type: "page",
+    category: "AIで副業・在宅ワーク",
+    title: "AIで作るデジタル手帳<br>3STEPガイド",
+    plainTitle: "AIで作るデジタル手帳｜ChatGPTで作ってEtsyに出品する3STEP",
+    description:
+      "ChatGPTを使ってデジタル手帳を作り、Etsyに出品するまでを3ステップで解説。コピペで使えるプロンプト付きで、はじめての方でも進められます。",
+    tags: ["デジタル手帳", "Etsy", "プロンプト集"],
+    url: "https://mion-ai-mama.github.io/digital-planner-tokuten/",
+    image: "assets/thumbs/digital-planner-tokuten.jpg?v=3a95e8be",
+  },
+  {
     id: "line-emoji-tokuten",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
     number: "28",
