@@ -24,6 +24,22 @@ const PRESENTS = [
   // ① 特典ページ型（GitHub Pages）… 新着順
   // ============================================================
   {
+    id: "japanese-poster-etsy-tokuten",
+    thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
+    // 完成例が縦長(2:3)のポスターのため、タイトルの横に完成例を並べる形で生成する。
+    thumbArt: "assets/thumb-src/japanese-poster-etsy-cover.jpg",
+    number: "30",
+    type: "page",
+    category: "AIで副業・在宅ワーク",
+    title: "AIで作って海外販売<br>日本風ポスター完全ガイド",
+    plainTitle: "AIで作って海外販売！日本風ポスター完全ガイド｜ChatGPTで作ってEtsyに出品",
+    description:
+      "ChatGPTでの画像制作からEtsyへの出品まで、初心者向けに解説。コピペで使えるプロンプト付きの無料ガイドです。",
+    tags: ["Etsy", "ポスター", "プロンプト集"],
+    url: "https://mion-ai-mama.github.io/japanese-poster-etsy-tokuten/",
+    image: "assets/thumbs/japanese-poster-etsy-tokuten.jpg?v=1e139ba8",
+  },
+  {
     id: "digital-planner-tokuten",
     number: "29",
     type: "page",
