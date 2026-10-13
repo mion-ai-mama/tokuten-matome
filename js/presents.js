@@ -26,16 +26,18 @@ const PRESENTS = [
   {
     id: "claude-work-delegation-tokuten",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
+    // 特典ページ内のイラスト(横4:3)を、人物とロボットが収まる縦長に切り出して右側に並べる。
+    thumbArt: "assets/thumb-src/claude-work-delegation-cover.jpg",
     number: "31",
     type: "page",
     category: "ChatGPT・AI活用",
-    title: "Claudeに「仕事を任せる」<br>はじめてガイド",
+    title: "Claudeに<br>「仕事を任せる」<br>はじめてガイド",
     plainTitle: "Claudeに「仕事を任せる」はじめてガイド｜コピペで使えるプロンプト付き",
     description:
       "質問するだけのAIから、仕事を任せるAIへ。Claudeに実際の仕事を頼む方法を、初心者向けにコピペで使えるプロンプト付きで解説します。",
-    tags: ["Claude", "仕事を任せる", "プロンプト集"],
+    tags: ["Claude", "任せ方", "プロンプト集"],
     url: "https://mion-ai-mama.github.io/claude-work-delegation-tokuten/",
-    image: "assets/thumbs/claude-work-delegation-tokuten.jpg?v=4f2b8af3",
+    image: "assets/thumbs/claude-work-delegation-tokuten.jpg?v=9500e0fe",
   },
   {
     id: "japanese-poster-etsy-tokuten",
