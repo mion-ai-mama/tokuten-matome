@@ -26,6 +26,8 @@ const PRESENTS = [
   {
     id: "ai-puzzle-tokuten",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
+    // 完成したパズルの縦長(2:3)画像を、タイトルの横に並べる形で生成する。
+    thumbArt: "assets/thumb-src/ai-puzzle-cover.png",
     number: "32",
     type: "page",
     category: "AIで副業・在宅ワーク",
@@ -35,7 +37,7 @@ const PRESENTS = [
       "絵心ゼロでもOK。AIで画像を作って「商品」にするところまで、作り方とそのまま使えるプロンプトをまとめた実践ガイドです。",
     tags: ["パズル", "Etsy", "プロンプト集"],
     url: "https://mion-ai-mama.github.io/ai-puzzle-tokuten/",
-    image: "assets/thumbs/ai-puzzle-tokuten.jpg?v=19c12e7f",
+    image: "assets/thumbs/ai-puzzle-tokuten.jpg?v=fc2e6218",
   },
   {
     id: "claude-work-delegation-tokuten",
