@@ -24,6 +24,20 @@ const PRESENTS = [
   // ① 特典ページ型（GitHub Pages）… 新着順
   // ============================================================
   {
+    id: "ai-puzzle-tokuten",
+    thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
+    number: "32",
+    type: "page",
+    category: "AIで副業・在宅ワーク",
+    title: "AIで作る<br>「オリジナルパズル販売」<br>スタートガイド",
+    plainTitle: "AIで作る「オリジナルパズル販売」スタートガイド｜絵心ゼロでもOK",
+    description:
+      "絵心ゼロでもOK。AIで画像を作って「商品」にするところまで、作り方とそのまま使えるプロンプトをまとめた実践ガイドです。",
+    tags: ["パズル", "Etsy", "プロンプト集"],
+    url: "https://mion-ai-mama.github.io/ai-puzzle-tokuten/",
+    image: "assets/thumbs/ai-puzzle-tokuten.jpg?v=19c12e7f",
+  },
+  {
     id: "claude-work-delegation-tokuten",
     thumbAuto: true, // サムネイルは gen-thumb.js で自動生成
     // 特典ページ内のイラスト(横4:3)を、人物とロボットが収まる縦長に切り出して右側に並べる。
