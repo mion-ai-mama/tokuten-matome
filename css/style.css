@@ -141,6 +141,15 @@ a {
   text-align: center;
 }
 
+.profile__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-bg-soft);
+  box-shadow: 0 0 0 1px var(--color-border);
+}
+
 .profile__name {
   font-weight: 800;
   font-size: 1rem;

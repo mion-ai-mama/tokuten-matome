@@ -22,7 +22,7 @@ Instagramで配布してきた全特典（GitHubページ / note記事 / プロ�
 
 ## 発信者情報（ページに出す名乗り）
 
-- 表示名: みおん｜AI×SNSで稼ぐ3児ママ
+- 表示名: みおん｜AI×SNSで自立した3児ママ
 - Instagram: `@mion.ai.mama` → https://www.instagram.com/mion.ai.mama/
 - GitHubアカウント: `mion-ai-mama`（発信用。本名ベースの `satomi-saiga` は使わない）
 
